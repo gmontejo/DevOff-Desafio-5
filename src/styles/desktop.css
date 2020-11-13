@@ -1,0 +1,87 @@
+@media (min-width: 1025px) {
+  #root {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-image: url("../img/pokeball-loading.png");
+    background-size: cover;
+    height: 20px;
+  }
+
+  /* CSS */
+  .App {
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  .poke-catalog {
+    background-color: white;
+    box-shadow: 0 0 5px 0;
+    padding: 10px 0 10px 20px;
+    display: flex;
+    align-content: flex-start;
+    height: 80%;
+    overflow-y: scroll;
+  }
+
+  .about,
+  .stats,
+  .evolutions {
+    padding: 15px 0 0 20px;
+  }
+  .poke-container {
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+  }
+  .card-info-container {
+    width: 25%;
+  }
+
+  .poke-mini-card:hover,
+  .info-title,
+  .clear-search-button,
+  .back-button {
+    cursor: pointer;
+  }
+
+  .curtain-one {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: calc(calc((50% - 12.5%) + 1px));
+    background-color: #f51851;
+    z-index: 9999;
+    background-image: url("../img/pokemonTitle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .curtain-two {
+    height: 100vh;
+    width: calc(50% - 12.5%);
+    position: fixed;
+    right: 0;
+    background-color: #f51851;
+    z-index: 9999;
+    background-image: url("../img/devoff.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}

@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+}
+
+.selected-section {
+  border: 5px solid;
+}
+
+/* GO BACK BUTTON */
+
+.back-button {
+  height: 3rem;
+  padding: 0 0 15px 0;
+  align-self: start;
+}
+
+/* CARD INFO CONTAINER */
+
+.card-info-container {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  transform: translateX(-100%);
+  flex-direction: column;
+  z-index: 3;
+}
+
+/* CARD INFO TOP  */
+.card-info-top {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 10px 30px;
+}
+
+.name-and-typee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-info-top .types {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.types span {
+  margin: 0 2px 2px 2px;
+  padding: 3px 6px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+/* CARD INFO BOTTOM */
+
+.card-info-bottom {
+  overflow: hidden;
+  flex: 1;
+  padding: 40px 10px 10px 10px;
+  background-color: white;
+  color: #444;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info-bottom ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card-info-bottom .titles-list {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+/* ABOUT SECTION */
+.about,
+.stats {
+  max-height: 100%;
+  overflow-y: scroll;
+  padding: 15px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about ul,
+.stats ul {
+  width: 100%;
+  margin: 15px 0;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.text-flavor {
+  padding: 15px 10px;
+  text-transform: none;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 0 black inset;
+}
+
+.about .main-data {
+  border-top: 1px solid rgb(179, 179, 179);
+  padding-top: 15px;
+}
+
+.about ul li,
+.stats ul li {
+  display: flex;
+  width: 100%;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.info-name {
+  min-width: 25%;
+  color: rgb(138, 136, 136);
+}
+
+/* STATS SECTION */
+
+.stats .info-name {
+  width: 20%;
+}
+.stat-number {
+  width: 25px;
+  margin-right: 5px;
+  text-align: end;
+}
+
+.full-bar {
+  width: 0%;
+  height: 5px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgb(212, 212, 212);
+}
+
+/* EVOLUTIONS SECTION */
+
+.evolutions {
+  max-height: 100%;
+  overflow-y: scroll;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ANIMATIONS */
+.slide-in {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* BACKGROUND COLORS */
+
+div[background="grass"] {
+  background-color: #48d0b0;
+  background-image: url("../img/backgrounds/grass.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+
+.grass {
+  background-color: #48d0b0;
+  border-color: #48d0b0;
+}
+
+div[background="fire"] {
+  background-color: #ee8031;
+  background-image: url("../img/backgrounds/fire.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+
+.fire {
+  background-color: #ee8031;
+  border-color: #ee8031;
+}
+
+div[background="water"] {
+  background-color: #76bdfe;
+  background-image: url("../img/backgrounds/water.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.water {
+  background-color: #76bdfe;
+  border-color: #76bdfe;
+}
+
+div[background="bug"] {
+  background-color: #b3c520;
+  background-image: url("../img/backgrounds/bug.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.bug {
+  background-color: #b3c520;
+  border-color: #b3c520;
+}
+
+div[background="normal"] {
+  background-color: #a9a67b;
+  background-image: url("../img/backgrounds/normal.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.normal {
+  background-color: #a9a67b;
+  border-color: #a9a67b;
+}
+
+div[background="poison"] {
+  background-color: #a23ea0;
+  background-image: url("../img/backgrounds/poison.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.poison {
+  background-color: #a23ea0;
+  border-color: #a23ea0;
+}
+
+div[background="psychic"] {
+  background-color: #f95587;
+  background-image: url("../img/backgrounds/psychic.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.psychic {
+  background-color: #f95587;
+  border-color: #f95587;
+}
+
+div[background="rock"] {
+  background-color: #b4a235;
+  background-image: url("../img/backgrounds/rock.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.rock {
+  background-color: #b4a235;
+  border-color: #b4a235;
+}
+
+div[background="steel"] {
+  background-color: #b7b8cd;
+  background-image: url("../img/backgrounds/steel.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.steel {
+  background-color: #b7b8cd;
+  border-color: #b7b8cd;
+}
+
+div[background="dark"] {
+  background-color: #705844;
+  background-image: url("../img/backgrounds/dark.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.dark {
+  background-color: #705844;
+  border-color: #705844;
+}
+
+div[background="dragon"] {
+  background-color: #6e37f3;
+  background-image: url("../img/backgrounds/dragon.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.dragon {
+  background-color: #6e37f3;
+  border-color: #6e37f3;
+}
+
+div[background="electric"] {
+  background-color: #f7d02b;
+  background-image: url("../img/backgrounds/electric.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.electric {
+  background-color: #f7d02b;
+  border-color: #f7d02b;
+}
+
+div[background="fairy"] {
+  background-color: #d685ad;
+  background-image: url("../img/backgrounds/fairy.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.fairy {
+  background-color: #d685ad;
+  border-color: #d685ad;
+}
+
+div[background="fighting"] {
+  background-color: #c22f28;
+  background-image: url("../img/backgrounds/fighting.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.fighting {
+  background-color: #c22f28;
+  border-color: #c22f28;
+}
+
+div[background="flying"] {
+  background-color: #a98ff3;
+  background-image: url("../img/backgrounds/flying.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.flying {
+  background-color: #a98ff3;
+  border-color: #a98ff3;
+}
+
+div[background="ghost"] {
+  background-color: #745797;
+  background-image: url("../img/backgrounds/ghost.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.ghost {
+  background-color: #745797;
+  border-color: #745797;
+}
+
+div[background="ground"] {
+  background-color: #e2bf65;
+  background-image: url("../img/backgrounds/ground.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.ground {
+  background-color: #e2bf65;
+  border-color: #e2bf65;
+}
+
+div[background="ice"] {
+  background-color: #97d9d7;
+  background-image: url("../img/backgrounds/ice.png");
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.ice {
+  background-color: #97d9d7;
+  border-color: #97d9d7;
+}
+
+.info-title {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 0;
+  background-color: white;
+}

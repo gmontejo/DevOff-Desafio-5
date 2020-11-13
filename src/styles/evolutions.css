@@ -1,0 +1,21 @@
+.evolutions {
+  height: 100%;
+}
+
+.evolution-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.evo-img {
+  width: 80px;
+  height: 80px;
+  background-image: url("../img/pokeSprites.png");
+}
+
+.arrow-down {
+  margin-bottom: 10px;
+  width: 15px;
+  height: auto;
+}
