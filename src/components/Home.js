@@ -98,8 +98,8 @@ export default function Home() {
         } else {
           gender = (
             <span>
-              <img src={maleSymbol} alt="male symbol" /> {male}{" "}
-              <img src={femaleSymbol} alt="male symbol" /> {female}
+              <img src={maleSymbol} alt="male symbol" /> {`${male}%`}{" "}
+              <img src={femaleSymbol} alt="male symbol" /> {`${female}%`}
             </span>
           );
         }
